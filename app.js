@@ -7,9 +7,7 @@ btns.forEach(btn =>{
 
   function getButton(e){
     let style = e.currentTarget.classList
-    if(input.value <=0 ){
-        input.value =' '
-    }
+    
     if (style.contains('number')) {
       let number = btn.textContent
       input.value += number
@@ -18,7 +16,7 @@ btns.forEach(btn =>{
      let value = eval(input.value)
       input.value = value
     }else{
-      input.value = 0
+      input.value = ' '
     }
    }
 })
