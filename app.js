@@ -13,8 +13,13 @@ btns.forEach(btn =>{
       input.value += number
       
     }else if(style.contains('equals')){
-     let value = eval(input.value)
+      try {
+        let value = eval(input.value)
       input.value = value
+      } catch (error) {
+        input.value = 'Syntax Error!'
+      }
+     
     }else{
       input.value = ' '
     }

@@ -46,6 +46,10 @@ main{
   background-color: rgba(3, 3, 3, 0.836);
   font-size: 20px;
 }
+
+.btn:focus{
+  outline: rgba(19, 18, 83, 0.308);
+}
 .clear{
   margin-right: 150px;
   color: rgba(255, 0, 0, 0.795);
